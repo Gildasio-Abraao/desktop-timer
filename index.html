@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Timer VR</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="d-flex">
+        <nav>
+          <img src="./src/assets/menu.png" alt="menu-hamb">
+        </nav>
+        <div class="machine">Máquina 01</div>
+      </header>
+      <div class="box d-flex">
+        <form action="#" class="d-flex none" id="change-count-down-time">
+          <input type="text" id="timer-input" maxlength="5">
+          <button class="confirm btn">Ok</button>
+        </form>
+        <div class="timer-label">5:00</div>
+        <div class="d-flex icon-case">
+          <img src="./src/assets/pencil.png" alt="edit time" class="edit">
+          <img src="./src/assets/undo.png" alt="undo time" class="reload">
+        </div>
+        <div class="btn-case">
+          <button class="btn start">Começar</button>
+          <button class="btn stop">Pausar</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./src/script.js"></script>
+</html>
